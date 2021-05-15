@@ -1,0 +1,111 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 110vh;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 900;
+    color: #e7272d;
+}
+
+.event {
+    display: flex;
+    width: 1200px;
+    height: 85vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.event-one {
+    width: 95%;
+    height: 30vh;
+    background-image: url('../img/banner1.jpg');
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event-one span {
+    color: green;
+    font-weight: 900;
+    margin-left: 100px;
+}
+
+.event-one h4 {
+    font-size: 40px;
+    color: green;
+    font-weight: 900;
+    margin-left: 100px;
+}
+
+.event-two {
+    width: 25%;
+    height: 25vh;
+    background-image: url('../img/event5.jpg');
+}
+
+.event-three {
+    width: 50%;
+    height: 25vh;
+    background-image: url('../img/banner2.jpg');
+}
+
+.event-three h4 {
+    font-size: 30px;
+    color: #febd11;
+    font-weight: 900;
+    margin-left: 30px;
+    line-height: 25vh;
+}
+
+.event-four {
+    width: 20%;
+    height: 25vh;
+    background-image: url('../img/event4.jpg');
+}
+
+.event-five {
+    width: 60%;
+    height: 25vh;
+    background-image: url('../img/banner3.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-five h4 {
+    font-size: 16px;
+    color: #febd11;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.event-five p {
+    font-size: 16px;
+    color: white;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+.event-six {
+    width: 30%;
+    height: 25vh;
+    background-image: url('../img/event6.jpg');
+}
+
+.event div {
+    background-size: 100% 100%;
+    transition: 2s all;
+    background-position: center;
+}
+
+.event div:hover {
+    background-size: 120% 120%;
+    background-position: center;
+}

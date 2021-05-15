@@ -1,0 +1,195 @@
+.delivery{
+  background-color: #222222;
+  background-image: url('../img/background-city.png');
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+.delivery-content{
+  color: white;
+  width: 400px;
+}
+.delivery-content h4 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.delivery-content button{
+  margin-top: 20px;
+  padding: 30px 80px;
+  border-radius: 50px;
+  color: white;
+  background-color: #e7272d;
+  font-size: 20px;
+  font-weight: 900;
+}
+.delivery-content button:hover{
+  background-color: white;
+  color: #e7272d;
+}
+.delivery-img{
+  width:500px;
+  height: 350px;
+}
+.delivery-deliveryman{
+  width: 400px;
+  height: 350px;
+  transition: 1s all;
+}
+
+.delivery-cloud{
+  opacity: 0;
+}
+
+.delivery-cloud-animation{
+  animation: cloudup 2s steps(2);
+}
+.trait{
+  background-color: #222222;
+  height:700px
+}
+.trait-burger{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 600px;
+  color: #e7272d
+}
+.trait-burger-box{
+  margin-bottom: 200px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 1s;
+}
+.trait-title{
+  font-size: 40px;
+  text-align: center;
+  height: 100px;
+  line-height: 150px;
+  color: white;
+  font-weight: 900;
+  background-image: linear-gradient(75deg, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 33.33%, rgba(255,255,255, 0) 66.67%, rgba(255,255,255, 0) 100%) ;
+  background-size: 300% 100%;
+  background-position-x: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 10s all;
+}
+.trait-title-active{
+  background-position-x: 0%;
+}
+.trait-burger-box-active{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.trait-burger-section{
+  width: 250px;
+  margin-bottom: 50px;
+  line-height: 1.9;
+  opacity: 0;
+  transform: translateY(-20px) ;
+  transition: 2s all;
+}
+.trait-burger-title{
+  font-size: 30px;
+  color:white;
+  font-weight: 900;
+  font-family:  monospace;
+  width: 1ch;
+  overflow: hidden;
+  transition: all 2s steps(15, jump-none);
+}
+.trait-section-active{
+  opacity:1;
+  transform: translateY(0px);
+}
+.traitburger-title-active{
+  width: 15ch
+}
+.burger-1{
+  transition: all 1s;
+  transform: translateY(200px);
+}
+.burger-2{
+  transform: translateY(130px);
+  transition: all 1s;
+}
+.burger-3{
+  transform: translateY(70px);
+  transition: all 1s;
+}
+.burger-4{
+  transition: all 1s;
+}
+.foodmeau{
+  height: 500px;
+  position: relative;
+  background-color: #222222;
+  overflow: hidden;
+}
+.foodmeau > div{
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.foodmeau-content h4{
+  font-size: 50px;
+  font-weight: 900;
+  color:white;
+  margin-bottom: 50px;
+}
+.foodmeau-sandwiches{
+  width: 50%;
+  height: 100%;
+  background-color: #00A850; 
+}
+.foodmeau-burger{
+  width: 50%;
+  height: 100%;
+  background-color: #FF8E28;
+  left:33%;
+  transition: 2s all;
+}
+.foodmeau-salads{
+  width: 50%;
+  height: 100%;
+  background-color: #A0CF68;
+  left:67%;
+  transition:2s all;
+}
+.foodmeau-content{
+  width: 300px
+}
+.foodmeau-sandwiches:hover ~ .foodmeau-burger{
+  left:45%
+}
+.foodmeau-burger:hover{
+  left:25%;
+}
+.foodmeau-salads:hover{
+  left:50%;
+}
+.foodmeau-sandwiches-img{
+  background-image: url('../img/sandwichs.png');
+  width: 400px;
+  height: 400px;
+  background-size: 400px 400px;
+}
+.foodmeau-burger-img{
+  width: 400px;
+  height: 400px;
+  background-size: 400px 400px;
+  background-image: url('../img/burger.png');
+}
+.foodmeau-salads-img {
+  width: 400px;
+  height: 400px;
+  background-size: 400px 400px;
+  background-image: url('../img/salads.png');
+}

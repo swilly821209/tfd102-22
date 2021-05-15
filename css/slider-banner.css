@@ -1,0 +1,52 @@
+.slider-container {
+  display: flex;
+  position: relative;
+}
+
+.banners {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.banners div {
+  margin: auto;
+  width: 1700px;
+  height: 650px;
+  background-size: cover;
+}
+
+.banner-one {
+  background-image: url('../img/banner1.jpg');
+}
+
+.banner-second {
+  background-image: url('../img/banner3.jpg');
+}
+
+.banner-third {
+  background-image: url('../img/banner2.jpg');
+}
+
+.banner-none {
+  display: none;
+}
+
+.banner-visiable {
+  display: block;
+  animation: FadeIn 1s;
+}
+
+.prev {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+}
+
+.next {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  right: 0
+}

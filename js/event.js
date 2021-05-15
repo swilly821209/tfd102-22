@@ -1,0 +1,1 @@
+import {socialIcon} from './iconscale.js'

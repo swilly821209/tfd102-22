@@ -1,0 +1,68 @@
+.product {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    color: white;
+    margin: 100px;
+}
+.product h1 {
+    font-size: 50px;
+    color: white
+}
+.product p {
+    width: 600px;
+    text-align: center;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    flex-direction: column;
+}
+section h2{
+    font-size: 30px;
+    color: white;
+}
+section ul{
+    display: flex;
+    justify-content: space-between;
+    width: 900px
+}
+section li a{
+    display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-size: 250px 250px;
+}
+.recommend{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+}
+.recommend img {
+    width: 70px;
+    height: 50px;
+    display: block;
+}
+.tuna{
+    background-image: url('../img/tuna_sandwiches.jpg');
+}
+.turkey-breast{
+    background-image: url('../img/turkeybreast_sandwiches.jpg');
+}
+.chicken-teriyaki{
+    background-image: url('../img/sweetonionchickenteriyaki.jpg');
+}
+.recommend-sauces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 150px;
+}

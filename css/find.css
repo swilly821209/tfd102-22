@@ -1,0 +1,22 @@
+
+  .find-title{
+      font-size: 50px;
+      font-weight: 900;
+      margin: 50px;
+      text-align: center;
+      color: #e7272d;
+  }
+  table{
+      background-color: white;
+      border-top: 6px solid #e7272d;
+      margin: 0 auto;
+  }
+  th{
+    line-height: 50px;
+  }
+  td,th{
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      border-bottom: 1px solid #e7272d;
+  }
