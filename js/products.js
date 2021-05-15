@@ -9,7 +9,7 @@ export let products = [
       img: './img/chose/redwinevinaigar.png',
       name: 'Red Wine Vinaigar'
     }, {
-      img: './img/chose/italian dressing.png',
+      img: './img/chose/Italiandressing.png',
       name: 'Italian Dressing'
     },
     {
@@ -35,7 +35,7 @@ export let products = [
       img: './img/chose/redwinevinaigar.png',
       name: 'Red Wine Vinaigar'
     }, {
-      img: './img/chose/italian dressing.png',
+      img: './img/chose/Italiandressing.png',
       name: 'Italian dressing'
     },
     {
@@ -93,7 +93,7 @@ export let products = [
       img: './img/chose/redwinevinaigar.png',
       name: 'Red Wine Vinaigar'
     }, {
-      img: './img/chose/italian dressing.png',
+      img: './img/chose/Italiandressing.png',
       name: 'Italian dressing'
     },
     {
@@ -111,7 +111,7 @@ export let products = [
       img: './img/chose/redwinevinaigar.png',
       name: 'Red Wine Vinaigar'
     }, {
-      img: './img/chose/italian dressing.png',
+      img: './img/chose/Italiandressing.png',
       name: 'Italian Dressing'
     },
     {
