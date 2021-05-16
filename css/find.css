@@ -1,22 +1,37 @@
+.find-title {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px;
+  text-align: center;
+  color: #e7272d;
+}
 
-  .find-title{
-      font-size: 50px;
-      font-weight: 900;
-      margin: 50px;
-      text-align: center;
-      color: #e7272d;
-  }
-  table{
-      background-color: white;
-      border-top: 6px solid #e7272d;
-      margin: 0 auto;
-  }
-  th{
-    line-height: 50px;
-  }
-  td,th{
-      padding: 15px;
-      width: 200px;
-      text-align: center;
-      border-bottom: 1px solid #e7272d;
-  }
+main {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  justify-content: center;
+  height: 85vh;
+}
+
+.find-input {
+  align-self: flex-end;
+  padding: 5px 10px;
+}
+table {
+  background-color: white;
+  border-top: 6px solid #e7272d;
+  width: 100%;
+}
+
+th {
+  line-height: 50px;
+}
+
+td, th {
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  border-bottom: 1px solid #e7272d;
+}

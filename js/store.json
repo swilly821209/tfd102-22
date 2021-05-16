@@ -1,0 +1,58 @@
+[
+    {
+        "no": 23993,
+        "location": "Guang Fu Nan Restaurant",
+        "address": "1F., No.435, Guangfu S. Rd., Xinyi Dist., Taipei City 110, Taiwan ",
+        "businessHour": "08:00-22:00",
+        "number": "(02)2723-7781"
+    },
+    {
+        "no": 21730,
+        "location": "Song De Restaurant",
+        "address": "No.28, Songde Rd., Xinyi Dist., Taipei City 110, Taiwan",
+        "businessHour": "08:00-22:00",
+        "number": "(02)8780-8380"
+    },
+    {
+        "no": 25623,
+        "location": "NTU Restaurant",
+        "address": " 1F., No.85, Sec. 4, Roosevelt Rd., Da’an Dist., Taipei City 106, Taiwan",
+        "businessHour": "08:00-22:00",
+        "number": "(02)3365-2629"
+    },
+    {
+        "no": 26739,
+        "location": "NTNU Restaurant",
+        "address": " 1F., No.230, Sec. 2, Jinshan S. Rd., Da’an Dist., Taipei City 106, Taiwan",
+        "businessHour": "08:00-22:00",
+        "number": "(02)2322-1767"
+    },
+    {
+        "no": 28187,
+        "location": "Zhou Zi Food Hall Restaurant",
+        "address": " 1F. (01011), No.517, Ruiguang Rd., Neihu Dist., Taipei City 114, Taiwan",
+        "businessHour": "08:30-22:00",
+        "number": "(02)8751-6551"
+    },
+    {
+        "no": 52742,
+        "location": "Chong Qing Heng Yang Restaurant",
+        "address": " 1F., No.23, Hengyang Rd., Zhongzheng Dist., Taipei City 100, Taiwan",
+        "businessHour": "07:30-22:00",
+        "number": "(02)2311-7907"
+    },
+    {
+        "no": 52744,
+        "location": "Farglory group Restaurant",
+        "address": "  B1F (B11600), No.99, Sec. 1, Xintai 5th Rd., Xizhi Dist., New Taipei City 221, Taiwan",
+        "businessHour": "07:30-22:00",
+        "number": "(02)2697-1121"
+    },
+    {
+        "no": 52783,
+        "location": "Nanshijiao MRT Restaurant",
+        "address": "  1F., No.21, Sec. 1, Xingnan Rd., Zhonghe Dist., New Taipei City 235, Taiwan",
+        "businessHour": "07:30-22:00",
+        "number": "(02)8668-2622"
+    }
+]
