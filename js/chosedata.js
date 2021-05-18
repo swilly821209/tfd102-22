@@ -223,7 +223,7 @@ export const saucesAndCheese = [
     },
     {
         saucesAndCheeseName: 'Italian Dressing',
-        saucesAndCheeseImg: 'img/chose/italian dressing.png',
+        saucesAndCheeseImg: 'img/chose/italian.png',
         saucesAndCheeseCalories: 62,
         saucesAndCheeseFat: 0,
         saucesAndCheeseCarbohydrate: 4,

@@ -61,6 +61,10 @@ main {
     animation: FadeIn 2s;
     text-align: center;
     line-height: 40px;
+    transition: all 1s
+}
+.productCard:hover {
+    transform: translateY(-20px);
 }
 
 .productCard h4 {

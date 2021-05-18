@@ -43,6 +43,10 @@ nav {
   text-decoration: none;
   padding: 5px;
   cursor: pointer;
+  transition: 2s all;
+}
+.header-nav-lists li:hover a {
+  border-bottom: 2px solid#e7272d;
 }
 .now-page {
   border-bottom: 2px solid#e7272d;
