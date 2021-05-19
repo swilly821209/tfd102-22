@@ -164,7 +164,8 @@
   transition:2s all;
 }
 .foodmeau-content{
-  width: 300px
+  width: 300px;
+  margin-left: 10%;
 }
 .foodmeau-sandwiches:hover ~ .foodmeau-burger{
   left:45%
