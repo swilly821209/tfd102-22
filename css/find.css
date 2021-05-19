@@ -11,12 +11,29 @@ main {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 85vh;
 }
 
 .find-input {
   align-self: flex-end;
-  padding: 5px 10px;
+  font-size: 0;
+  border: 2px solid #e7272d;
+  margin-bottom: 10px;
+}
+.find-input input {
+  padding: 8px;
+  outline: none;
+  border: none;
+}
+.find-input label{
+  display: inline-block;
+  width: 20px;
+  height: 31px;
+  background-image: url('../img/site-selection-img.png');
+  background-size: 100%;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align:bottom;
 }
 table {
   background-color: white;

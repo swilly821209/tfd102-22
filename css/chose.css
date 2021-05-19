@@ -110,7 +110,7 @@ main{
  margin:20px auto;
 }
 .chose-result{
-  opacity: 0;
+  display: none;
   margin-top: 40px;
   background-color:  white;
   width: 700px;

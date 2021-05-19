@@ -26,9 +26,11 @@
     align-items: center;
     border-radius: 50px;
 }
+
 .sandwiches-menu li {
     transition: all 1s;
 }
+
 .sandwiches-menu li:hover {
     color: #e7272d;
     transform: scale(1.5);
@@ -60,15 +62,18 @@ main {
     border-radius: 20px;
     animation: FadeIn 2s;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     transition: all 1s
 }
+
 .productCard:hover {
     transform: translateY(-20px);
 }
 
 .productCard h4 {
     font-size: 20px;
+    font-weight: 900;
+    color: #e7272d
 }
 
 .productCard img {

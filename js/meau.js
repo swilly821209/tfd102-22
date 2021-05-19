@@ -7,8 +7,10 @@ select('ALL')
 
 
 allType.addEventListener('click', (e) => {
-    let seletText = e.target.textContent
-    select(seletText)
+    if (e.target.nodeName == 'LI') {
+        let seletText = e.target.textContent
+        select(seletText)
+    }
 })
 function select(select) {
     let productCard = ""

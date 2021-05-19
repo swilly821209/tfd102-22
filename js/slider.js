@@ -1,5 +1,5 @@
 export let sliderPosition = 0
-let sliders = document.querySelectorAll('.banners div');
+let sliders = document.querySelectorAll('.banners > div');
 let slidersLength = sliders.length
 let next = document.querySelector('.next');
 let prev = document.querySelector('.prev');

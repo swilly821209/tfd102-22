@@ -4,9 +4,10 @@ import { sliderPosition } from './slider.js'
 let orderButton = document.querySelector('.delivery-content button')
 let deliverymanImg = document.querySelector('.delivery-deliveryman')
 orderButton.addEventListener('click', () => {
-  console.dir(deliverymanImg)
   deliverymanImg.style.transform = 'translateX(800px)'
-  console.dir(deliverymanImg)
+  deliverymanImg.addEventListener('transitionend', () => {
+    window.location.assign('https://www.ubereats.com/tw/city/taipei-nwt')
+  })
 })
 orderButton.addEventListener('mouseover', () => {
   let cloudImg = document.querySelector('.delivery-cloud');

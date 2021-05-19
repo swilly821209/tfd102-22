@@ -27,7 +27,7 @@ async function filterStore(text) {
     container.innerHTML = str
 }
 filterStore('')
-const input = document.querySelector('.find-input')
+const input = document.querySelector('.find-input input')
 input.addEventListener('input', () => {
     filterStore(input.value)
 })

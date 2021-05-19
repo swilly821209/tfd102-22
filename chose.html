@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/slider-banner.css">
     <link rel="stylesheet" href="css/chose.css" />
     <link rel="stylesheet" href="css/footer.css">
-
+    <script type="module" src="js/find.js" defer></script>
 </head>
 
 <body>
@@ -44,20 +44,31 @@
     <div class="slider-container">
         <img src="img/prev.svg" class="prev">
         <div class="banners">
-            <div class="banner-one banner-visiable"></div>
-            <div class="banner-second banner-none"></div>
-            <div class="banner-third banner-none"></div>
+            <div class="banner-one banner-visiable">
+                <div>
+                    <h4>BUY A FOOTLONG GET ONE</h4>
+                    <h1>50% OFF</h1>
+                    <p>Order online with code BOGO50</p>
+                </div>
+            </div>
+            <div class="banner-second banner-none">
+                <div>
+                    <h1>THE BASKETBALL PROS MADE THEIR PICKS.</h1>
+                    <p>What's yours?</p>
+                </div>
+            </div>
+            <div class="banner-third banner-none">
+                <div>
+                    <h1>GET A FREE 6”</h1>
+                    <p>
+                        When you spend $25 on gift cards. Now through June 30th
+                    </p>
+                </div>
+            </div>
         </div>
         <img src="img/next.svg" class="next">
     </div>
     <main>
-        <div class="chose-pages">
-            <div class="chose-page">1</div>
-            <div class="chose-page">2</div>
-            <div class="chose-page">3</div>
-            <div class="chose-page">4</div>
-            <div class="chose-page">5</div>
-        </div>
         <div class="chose-container">
             <h2 class="chose-title"></h2>
             <div class="chose-content"></div>
@@ -69,7 +80,14 @@
                 <li>carbohydrate</li>
                 <li>protein</li>
             </ul>
-            <button class="button">Order Now</button>
+            <button class="button"><a href="https://www.ubereats.com/tw/city/taipei-nwt">Order Now</a></button>
+        </div>
+        <div class="chose-pages">
+            <div class="chose-page">1</div>
+            <div class="chose-page">2</div>
+            <div class="chose-page">3</div>
+            <div class="chose-page">4</div>
+            <div class="chose-page">5</div>
         </div>
     </main>
     <footer>
@@ -120,6 +138,6 @@
         </div>
     </footer>
 </body>
-<script type="module" src="js/find.js"></script>
+
 
 </html>

@@ -4,7 +4,7 @@ import {socialIcon} from './iconscale.js'
 
 import { breads, veggies, meats, saucesAndCheese } from './chosedata.js'
 let all = {}
-
+const page = document.querySelector('.chose-pages');
 const pages = document.querySelectorAll('.chose-page');
 const choseTitle = document.querySelector('.chose-title');
 const choseContant = document.querySelector('.chose-content');
@@ -107,16 +107,18 @@ pages[4].addEventListener('click', () => {
         <img src="${saucesAndCheese[index].saucesAndCheeseImg}" class="chose-img">
         </div>`
     })
-    choseResult.style.opacity = "1"
+    choseResult.style.display = "flex"
     choseResultList[0].textContent = `Calories: ${totalCalories.toFixed(1)}Kcal`;
     choseResultList[1].textContent = `Fat: ${totalFat.toFixed(1)}g`
     choseResultList[2].textContent = `Carbohydrate: ${totalCarbohydrate.toFixed(1)}g`
     choseResultList[3].textContent = `Protein: ${totalProtein.toFixed(1)}g`
     choseContant.innerHTML = str
+    page.style.display = 'none'
 })
 
 function first() {
     pageNow(0);
+    page.style.display = 'flex'
     choseTitle.textContent = 'BREAD';
     let str = '';
     breads.forEach((bread) => {
