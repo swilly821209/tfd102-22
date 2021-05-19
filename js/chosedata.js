@@ -34,6 +34,14 @@ export const breads = [
 ]
 export const meats = [
     {
+        meatName: 'Roast Beef',
+        meatImg: 'img/menu/roast beef.png',
+        meatCalories: 346,
+        meatFat: 7.1,
+        meatCarbohydrate: 40,
+        meatProtein: 21,
+    },
+    {
         meatName: 'Chicken Sliced',
         meatImg: 'img/menu/chicken sliced.png',
         meatCalories: 50,
