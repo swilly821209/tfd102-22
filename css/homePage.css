@@ -1,3 +1,89 @@
+section{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.order-party{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  justify-content: space-around;
+}
+.simplex-slider{
+  display:flex;
+  width: 600px;
+  overflow: hidden;
+  border: 2px solid #e7272d;
+  cursor: url('../img/rednext.png')72 128, pointer;
+}
+.sliders{
+  display:flex;
+}
+.sliders img{
+  width: 100%;
+  height: 400px;
+}
+.slider-info{
+  width: 400px;
+  
+}
+.info{
+  width:300px;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+.info h4{
+  font-size: 30px;
+  font-weight: 900;
+  color:#e7272d;
+  margin-bottom: 30px;
+}
+.info p{
+  color: white;
+  line-height: 2rem;
+}
+.turn-page{
+  animation: turnPage 1s linear;
+}
+.nutrition{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  justify-content: space-around;
+}
+.nutrition-info{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.nutrition-info h4{
+    font-size: 30px;
+    font-weight: 900;
+    color: #e7272d;
+}
+.nutrition-info h5{
+  font-size: 20px;
+  font-weight: 900;
+  color:white;
+  margin: 20px 0;
+}
+.nutrition-info p{
+  color: white;
+  line-height: 2rem;
+}
+.nutrition-img{
+  width: 500px;
+  height: 500px;
+  border:2px solid #e7272d
+}
+.nutrition-img img{
+  width: 100%;
+  height: 100%;
+}
 .delivery{
   background-color: #222222;
   background-image: url('../img/background-city.png');
@@ -10,24 +96,17 @@
 .delivery-content{
   color: white;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
 }
 .delivery-content h4 {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
-.delivery-content button{
-  margin-top: 20px;
-  padding: 30px 80px;
-  border-radius: 50px;
-  color: white;
-  background-color: #e7272d;
-  font-size: 20px;
-  font-weight: 900;
-}
-.delivery-content button:hover{
-  background-color: white;
-  color: #e7272d;
+.delivery-content p{
+  line-height: 1.2rem;
 }
 .delivery-img{
   width:500px;
@@ -38,7 +117,6 @@
   height: 350px;
   transition: 1s all;
 }
-
 .delivery-cloud{
   opacity: 0;
 }
@@ -55,7 +133,7 @@
   justify-content:space-evenly;
   align-items: center;
   height: 600px;
-  color: #e7272d
+  color: white
 }
 .trait-burger-box{
   margin-bottom: 200px;
@@ -95,7 +173,7 @@
 }
 .trait-burger-title{
   font-size: 30px;
-  color:white;
+  color:#e7272d;
   font-weight: 900;
   font-family:  monospace;
   width: 1ch;
@@ -118,7 +196,7 @@
   transition: all 1s;
 }
 .burger-3{
-  transform: translateY(70px);
+  transform: translateY(60px);
   transition: all 1s;
 }
 .burger-4{

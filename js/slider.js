@@ -1,31 +1,37 @@
-export let sliderPosition = 0
-let sliders = document.querySelectorAll('.banners > div');
-let slidersLength = sliders.length
+export let count = 1
 let next = document.querySelector('.next');
 let prev = document.querySelector('.prev');
-function update() {
-    for (let slider of sliders) {
-        slider.classList.remove('banner-visiable')
-        slider.classList.add('banner-none')
-    }
-    sliders[sliderPosition].classList.add('banner-visiable');
-}
+
+const sliderContainer = document.querySelector('.banners')
+const sliderBanners = document.querySelectorAll('.banners>div')
+console.log(sliderBanners.length)
+let size = 100
+sliderContainer.style.transform = `translateX(${-size * count}%)`
 
 next.addEventListener('click', () => {
-    if (sliderPosition == slidersLength - 1) {
-        sliderPosition = 0;
-    } else {
-        sliderPosition++
-    }
-    update()
+    if(count >= sliderBanners.length - 1)return;
+    sliderContainer.style.transition = 'transform 0.6s'
+    count++
+    sliderContainer.style.transform = `translateX(${-size * count}%)`
+    console.log(count)
+})
+prev.addEventListener('click', () => {
+    if(count <= 0)return;
+    sliderContainer.style.transition = 'transform 0.6s'
+    count--
+    sliderContainer.style.transform = `translateX(${-size * count}%)`
+    console.log(count)
 })
 
-prev.addEventListener('click', () => {
-    if (sliderPosition == 0) {
-        sliderPosition = slidersLength - 1;
-    } else {
-        sliderPosition--
+sliderContainer.addEventListener('transitionend', () => {
+    sliderContainer.style.transition = 'none';
+    if(sliderBanners[count].id == 'last'){
+        count = sliderBanners.length - 2
+        sliderContainer.style.transform = `translateX(${-size * count}%)`
     }
-    console.log(sliderPosition)
-    update()
+    if(sliderBanners[count].id == 'first'){
+        count = sliderBanners.length - count
+        sliderContainer.style.transform = `translateX(${-size * count}%)`
+    }
+    
 })

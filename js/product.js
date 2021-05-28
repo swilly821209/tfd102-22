@@ -1,5 +1,6 @@
 import { products } from './products.js';
 import {socialIcon} from './iconscale.js'
+import { hamburgBox } from './hamburger-menu.js'
 let product = document.querySelector('.product');
 function render() {
   let hashId = location.hash.replace('#', '')

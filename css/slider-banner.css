@@ -1,111 +1,170 @@
-.slider-container {
-  display: flex;
+.slider-container{
+  overflow-x: hidden;
+  height: 650px;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.banners{
   width: 100%;
+  height: 650px;
+  display: flex;
 }
-
-.banners {
-  width: 100%;
-  margin: 0 auto;
+.next{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 5px;
 }
-
-.banners > div {
-  margin: auto;
-  width: 90%;
-  height: 620px;
-  background-size: 100% 100%;
+.prev{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 5px;
 }
-
 .banner-one {
   background-image: url('../img/banner1.jpg');
+  min-width: 100%;
+  background-position: center center;
+  background-size: 100% 100%;
+  height:650px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 50px;
+  align-items: center;
 }
-.banner-one div{
-  margin-left: 60px;
+.banner-one-content{
+  margin-left: 10%;
+  width: 40%;
 }
 .banner-one h4 {
   color: #00892a;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 900;
 }
 
 .banner-one h1 {
   color: #00572d;
-  font-size: 100px;
+  font-size: 40px;
   font-weight: 900;
 }
 .banner-one p {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 25px;
   color: #00572d;
 }
 
 .banner-second {
   background-image: url('../img/banner3.jpg');
+  min-width: 100%;
+  background-position: center center;
+  background-size: 100% 100%;
+  height:650px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 50px;
+  align-items: center;
 }
-.banner-second div{
-  margin-left: 60px;
+.banner-second-content{
+  margin-left: 10%;
+  width:35%;
+
+}
+.banner-second h4{
+  font-weight: 900;
+  font-size: 40px;
+  color:#f3b115;
 }
 .banner-second h1{
   font-weight: 900;
   font-size: 40px;
-  color: #f3b115;
-  width: 500px;
+  color: white;
 }
 .banner-second p{
   font-weight: 900;
-  font-size: 40px;
-  color: white;
+  font-size: 30px;
+  color:#f3b115;
 }
+
 .banner-third {
   background-image: url('../img/banner2.jpg');
+  min-width: 100%;
+  background-position: center center;
+  background-size: 100% 100%;
+  height:650px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 50px;
+  align-items: center;
 }
-.banner-third div {
-  margin-left: 60px;
+.banner-third-content {
+  margin-left: 10%;
+  width: 40%;
 }
 .banner-third h1 {
   font-weight: 900;
-  font-size: 60px;
+  font-size: 40px;
   color: #f3b115
 }
 .banner-third p{
   font-weight: 900;
   font-size: 30px;
   color: white;
-  width: 450px;
+}
+@media (max-width: 575px) {
+  .banner-one{
+    background-image: url('../img/banner1-m.jpg');
+    background-color: yellow;
+    background-size: 100% 50%;
+    background-position: top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+    overflow-y: hidden;
+  }
+  .banner-one-content{
+    width: 80%;
+    height: 35%;
+  }
+  .banner-one h4 {
+    color: #00892a;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  
+  .banner-one h1 {
+    color: #00572d;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .banner-one p {
+    font-weight: 900;
+    font-size: 25px;
+    color: #00572d;
+  }
+  .banner-second{
+    height: 100%;
+    background-image: url('../img/banner3-m.jpg');
+    background-color: black;
+    background-size: 100% 50%;
+    background-position: top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+    overflow-y: hidden;
+  }
+  .banner-second-content{
+    width: 80%;
+    height: 40%;
+  }
+  .banner-third{
+    height: 100%;
+    background-image: url('../img/banner2-m.jpg');
+    background-color: #008D43;
+    background-size: 100% 50%;
+    background-position: top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+    overflow-y: hidden;
+  }
+  .banner-third-content{
+    width: 80%;
+    height: 40%;
+  }
 }
 
-.banner-none {
-  display: none;
-}
-
-.banner-visiable {
-  display: flex;
-  animation: FadeIn 1s;
-}
-
-.prev {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-}
-
-.next {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  right: 0
-}

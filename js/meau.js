@@ -1,5 +1,6 @@
 import { products } from './products.js'
 import { socialIcon } from './iconscale.js'
+import { hamburgBox } from './hamburger-menu.js'
 const productContainer = document.querySelector('.product-container')
 const allType = document.querySelector('.sandwiches-menu')
 

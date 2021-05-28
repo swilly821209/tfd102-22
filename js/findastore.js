@@ -1,5 +1,6 @@
 import { socialIcon } from './iconscale.js'
-import { sliderPosition } from './slider.js'
+import { count } from './slider.js'
+import { hamburgBox } from './hamburger-menu.js'
 const container = document.querySelector('.store-container');
 async function filterStore(text) {
     const res = await fetch('./js/store.json')

@@ -2,141 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chose</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/slider-banner.css">
-    <link rel="stylesheet" href="css/chose.css" />
-    <link rel="stylesheet" href="css/footer.css">
-    <script type="module" src="js/find.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chose</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/slider-banner.css">
+  <link rel="stylesheet" href="css/chose.css" />
+  <link rel="stylesheet" href="css/footer.css">
+  <script type="module" src="js/find.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="header-social-list">
-            <a href="#"><img src="./img/youtube.svg" alt="fb" class="header-social-icon" /></a>
-            <a href="#"><img src="./img/twitter.svg" alt="ig" class="header-social-icon" /></a>
-            <a href="#"><img src="./img/fb.svg" alt="fb" class="header-social-icon" /></a>
-            <a href="#"><img src="./img/ig.svg" alt="ig" class="header-social-icon" /></a>
-        </div>
-        <nav>
-            <ul class="header-nav">
-                <li>
-                    <h1 class="header-logo"><a href="index.html"></a></h1>
-                </li>
-                <li>
-                    <ul class="header-nav-lists">
-                        <li><a href="meau.html">MENU</a></li>
-                        <li><a href="event.html">EVENT</a></li>
-                        <li><a href="find.html">FIND A ALWAY</a></li>
-                        <li><a href="chose.html" class="now-page">NUTRITION CALCULATOR</a></li>
-                        <li><a href="franchise.html">FRANCHISE</a></li>
-                        <li><button class="member-button">BECOME MEMBER</button></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="slider-container">
-        <img src="img/prev.svg" class="prev">
-        <div class="banners">
-            <div class="banner-one banner-visiable">
-                <div>
-                    <h4>BUY A FOOTLONG GET ONE</h4>
-                    <h1>50% OFF</h1>
-                    <p>Order online with code BOGO50</p>
-                </div>
-            </div>
-            <div class="banner-second banner-none">
-                <div>
-                    <h1>THE BASKETBALL PROS MADE THEIR PICKS.</h1>
-                    <p>What's yours?</p>
-                </div>
-            </div>
-            <div class="banner-third banner-none">
-                <div>
-                    <h1>GET A FREE 6”</h1>
-                    <p>
-                        When you spend $25 on gift cards. Now through June 30th
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="img/next.svg" class="next">
+  <header>
+    <div class="header-social-list">
+      <a href="#"><img src="./img/youtube.svg" alt="fb" class="header-social-icon" /></a>
+      <a href="#"><img src="./img/twitter.svg" alt="ig" class="header-social-icon" /></a>
+      <a href="#"><img src="./img/fb.svg" alt="fb" class="header-social-icon" /></a>
+      <a href="#"><img src="./img/ig.svg" alt="ig" class="header-social-icon" /></a>
     </div>
-    <main>
-        <div class="chose-container">
-            <h2 class="chose-title"></h2>
-            <div class="chose-content"></div>
-        </div>
-        <div class="chose-result">
-            <ul>
-                <li>Calories:</li>
-                <li>Fat</li>
-                <li>carbohydrate</li>
-                <li>protein</li>
-            </ul>
-            <button class="button"><a href="https://www.ubereats.com/tw/city/taipei-nwt">Order Now</a></button>
-        </div>
-        <div class="chose-pages">
-            <div class="chose-page">1</div>
-            <div class="chose-page">2</div>
-            <div class="chose-page">3</div>
-            <div class="chose-page">4</div>
-            <div class="chose-page">5</div>
-        </div>
-    </main>
-    <footer>
+    <nav>
+      <ul class="header-nav">
+        <li>
+          <h1 class="header-logo"><a href="index.html"></a></h1>
+        </li>
+        <li>
+          <ul class="header-nav-lists">
+            <li><a href="meau.html">MENU</a></li>
+            <li><a href="event.html">EVENT</a></li>
+            <li><a href="find.html">FIND A ALWAY</a></li>
+            <li><a href="chose.html">NUTRITION CALCULATOR</a></li>
+            <li><a href="franchise.html">FRANCHISE</a></li>
+            <li class="register"><img src="./img/register.svg" alt="register"></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="hamburg-menu">
+        <span class="menu-global menu-top"></span>
+        <span class="menu-global menu-middle"></span>
+        <span class="menu-global menu-bottom"></span>
+      </div>
+    </nav>
+  </header>
+  <div class="slider-container">
+    <div class="banners">
+      <div class="banner-third" id="last">
         <div>
-            <h4>What else do you wanna know?</h4>
-            <div class="footer-content">
-                <div>
-                    <h5>BE THE BOSS</h5>
-                    <ul>
-                        <li><a href="#">Own a Alway</a></li>
-                        <li><a href="#">Franchise Info</a></li>
-                        <li><a href="#">Next Steps</a></li>
-                        <li><a href="#">Apply for Franchise</a></li>
-                        <li><a href="#">In-Person Info Sessions</a></li>
-                        <li><a href="#">Own a Franchise</a></li>
-                        <li><a href="#">Submit a Franchise Location</a></li>
-                        <li><a href="#">Non-Traditional Partnerships</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>GET TO KNOW US</h5>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Our Veterans</a></li>
-                        <li><a href="#">US Locations</a></li>
-                        <li><a href="#">Explore Our World</a></li>
-                    </ul>
-                    <h5>SUSTAINABILITY</h5>
-                    <ul>
-                        <li><a href="#">Well-Being</a></li>
-                        <li><a href="#">Our Planet</a></li>
-                        <li><a href="#">Communities</a></li>
-                        <li><a href="#">Modern Slavery Disclosure</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>CONTACT</h5>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Unsubscribe</a></li>
-                    </ul>
-                </div>
-                <div class="footer-log"><img src="img/logo.png" alt="logo"></div>
-            </div>
+          <h1>GET A FREE 6”</h1>
+          <p>
+            When you spend $25 on gift cards. Now through June 30th
+          </p>
         </div>
-    </footer>
+      </div>
+      <div class="banner-one">
+        <div>
+          <h4>BUY A FOOTLONG GET ONE</h4>
+          <h1>50% OFF</h1>
+          <p>Order online with code BOGO50</p>
+        </div>
+      </div>
+      <div class="banner-second">
+        <div>
+          <h1>THE BASKETBALL PROS MADE THEIR PICKS.</h1>
+          <p>What's yours?</p>
+        </div>
+      </div>
+      <div class="banner-third">
+        <div>
+          <h1>GET A FREE 6”</h1>
+          <p>
+            When you spend $25 on gift cards. Now through June 30th
+          </p>
+        </div>
+      </div>
+      <div class="banner-one" id="first">
+        <div>
+          <h4>BUY A FOOTLONG GET ONE</h4>
+          <h1>50% OFF</h1>
+          <p>Order online with code BOGO50</p>
+        </div>
+      </div>
+    </div>
+    <img src="img/prev.svg" class="prev">
+    <img src="img/next.svg" class="next">
+  </div>
+  <main>
+    <h1 class="chose-page-title">Choose your favorite </h1>
+    <div class="chose-pages">
+      <div class="chose-page">1</div>
+      <div class="chose-page">2</div>
+      <div class="chose-page">3</div>
+      <div class="chose-page">4</div>
+      <div class="chose-page">5</div>
+    </div>
+    <div class="chose-container">
+      <h2 class="chose-title"></h2>
+      <div class="chose-content"></div>
+      <button class="button nextStep">Next step</button>
+    </div>
+    <div class="chose-result">
+      <ul>
+        <li>Calories:</li>
+        <li>Fat</li>
+        <li>carbohydrate</li>
+        <li>protein</li>
+        <li class="list-button"><button class="button"><a href="https://www.ubereats.com/tw/city/taipei-nwt">Order
+              Now</a></button> </li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-item">
+      <h4>What else do you wanna know?</h4>
+      <div class="footer-content">
+        <div>
+          <h5>BE THE BOSS</h5>
+          <ul>
+            <li><a href="#">Own a Alway</a></li>
+            <li><a href="#">Franchise Info</a></li>
+            <li><a href="#">Next Steps</a></li>
+            <li><a href="#">Apply for Franchise</a></li>
+            <li><a href="#">In-Person Info Sessions</a></li>
+            <li><a href="#">Own a Franchise</a></li>
+            <li><a href="#">Submit a Franchise Location</a></li>
+            <li><a href="#">Non-Traditional Partnerships</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>GET TO KNOW US</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Our Veterans</a></li>
+            <li><a href="#">US Locations</a></li>
+            <li><a href="#">Explore Our World</a></li>
+          </ul>
+          <h5>SUSTAINABILITY</h5>
+          <ul>
+            <li><a href="#">Well-Being</a></li>
+            <li><a href="#">Our Planet</a></li>
+            <li><a href="#">Communities</a></li>
+            <li><a href="#">Modern Slavery Disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>CONTACT</h5>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Unsubscribe</a></li>
+          </ul>
+          <div class="footer-log"><img src="img/logo.png" alt="logo"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 
