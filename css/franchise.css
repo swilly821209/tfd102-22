@@ -1,8 +1,8 @@
 .banner {
     background-image: url("../img/franchise-banner.jpg");
+    background-size: 100% 100%;
     width: 100%;
-    height: 650px;
-    margin: 0 auto;
+    min-height: 500px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -11,14 +11,14 @@
 }
 
 .banner-content {
-    width: 35%;
+    width: 40%;
     color: white;
     text-align: right;
     margin-right: 100px;
 }
 
 .banner-title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 900;
 }
 
@@ -26,12 +26,50 @@
     margin: 20px 0;
 }
 
+@media (max-width: 996px) {
+    .banner {
+        min-height: 450px;
+    }
+    .banner-title {
+        font-size: 35px;
+    }
+    .banner-content {
+        width: 50%;
+    }
+}
 
+@media (max-width: 767px) {
+    .banner-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        background-image: url('../img/franchise-banner-m.jpg');
+        background-size: 100% 50%;
+        background-position: top;
+        height: 650px;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: black;
+        overflow-y: hidden;
+    }
+    .banner-content {
+        text-align: left;
+        margin-right: 0px;
+        width: 70%;
+        height: 40%;
+    }
+    .banner-content p {
+        width: 80%
+    }
+}
 
 .franchise-step-qualify {
     background-color: #8bcd32;
-    width: 1200px;
-    height: 200px;
+    width: 1100px;
+    height: 250px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -58,8 +96,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 850px;
-    width: 1240px;
+    height: 830px;
+    width: 1160px;
     margin: -30px auto 0 auto;
     background-color: white;
 }
@@ -73,21 +111,22 @@
     display: flex;
     width: 1100px;
     height: 500px;
-    padding: 50px;
     justify-content: space-evenly;
+    align-items: center;
     align-content: space-around;
     flex-direction: column;
-    text-align: center;
 }
 
 .franchise-step-containerup {
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
 }
 
 .franchise-step-container {
+    width: 95%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .franchise-content {
@@ -100,7 +139,13 @@
     margin-bottom: 10px;
 }
 
+.franchise-content p {
+    font-size: 8px;
+    width: 120px;
+}
+
 .franchise-img {
+    width: 95%;
     display: flex;
     justify-content: space-around;
 }
@@ -143,19 +188,107 @@
     background-image: url('../img/open-img.png');
 }
 
+.franchise-img-m {
+    display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .franchise-step {
+        width: 990px;
+    }
+    .franchise-step-qualify {
+        width: 930px
+    }
+    .franchise-step-detail {
+        width: 930px
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .franchise-step {
+        width: 90%;
+    }
+    .franchise-step-qualify {
+        width: 90%
+    }
+    .franchise-step-detail {
+        width: 90%
+    }
+    .franchise-step-qualify p {
+        width: 95%;
+    }
+    .franchise-img div {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 766px) {
+    .franchise-step-qualify {
+        width: 90%;
+        margin: 5% 0;
+    }
+    .franchise-step-detail {
+        margin-bottom: 5%;
+        width: 90%;
+        height: auto;
+    }
+    .franchise-step-qualify p {
+        width: 95%;
+    }
+    .franchise-step {
+        width: 90%;
+        height: auto;
+    }
+    .title-size {
+        font-size: 25px;
+        margin: 20px;
+    }
+    .franchise-step-containerup {
+        display: none;
+    }
+    .franchise-img {
+        display: none;
+    }
+    .franchise-step-container {
+        display: none;
+    }
+    .franchise-img-m {
+        margin: 20px;
+        width: 90%;
+        display: block;
+    }
+}
+
+@media(max-width:576px) {
+    .franchise-step-qualify {
+        height: auto;
+    }
+    .title-size {
+        font-size: 16px;
+        margin: 15px;
+    }
+    .franchise-step-detail h5 {
+        font-size: 14px;
+    }
+    .franchise-step-qualify p {
+        font-size: 14px;
+        margin: 5px;
+    }
+}
+
 .advantage {
-    width: 1120px;
-    height: 820px;
+    margin: 50px auto;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-    margin: 50px auto;
+    justify-content: space-evenly;
 }
 
 .advantage-point {
-    width: 550px;
-    height: 400px;
+    margin: 25px;
+    width: 450px;
+    height: 350px;
     background-color: white;
     background-size: 100% 70%;
     background-repeat: no-repeat;
@@ -179,6 +312,9 @@
 }
 
 .advantage-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 150px;
     background-color: #ffce32;
@@ -187,8 +323,7 @@
     bottom: 0;
     font-weight: 900;
     text-align: center;
-    line-height: 150px;
-    font-size: 20px;
+    font-size: 16px;
     color: #e7272d;
 }
 
@@ -196,8 +331,71 @@
     position: absolute;
     left: 230px;
     top: 72%;
-    line-height: 1.5rem;
+    line-height: 13px;
     list-style: square;
+}
+
+.advantage-list li {
+    font-size: 8px;
+    margin: 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .advantage {
+        width: 990px;
+    }
+    .advantage-point {
+        margin: 10px;
+        width: 430px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .advantage {
+        width: 95%;
+    }
+    .advantage-point {
+        margin: 10px;
+        background-size: 100% 65%;
+    }
+    .advantage-point {
+        margin: 10px;
+        width: 330px;
+        height: 300px;
+    }
+    .advantage-title{
+        width: 150px;
+        height: 110px;
+        font-size: 14px;
+    }
+    .advantage-list {
+        left: 165px;
+        top: 68%;
+        line-height: 10px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px){
+    .advantage {
+        width: 90%;
+    }
+}
+@media (max-width: 576px){
+    .advantage-point {
+        margin: 10px;
+        width: 320px;
+        height: 300px;
+        background-size: 100% 50%;
+    }
+    .advantage-title{
+        width: 50%;
+        font-size: 14px;
+    }
+    .advantage-list{
+        left: 55%;
+        top: 55%;
+    }
 }
 
 .quality {
@@ -206,23 +404,23 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
-    width: 1200px;
+    width: 1160px;
     height: 1200px;
     align-items: center;
 }
 
 .quality-content {
     display: flex;
-    width: 1100px;
-    height: 1000px;
+    width: 1000px;
+    height: 950px;
     justify-content: space-around;
     align-content: space-around;
     flex-wrap: wrap;
 }
 
 .quality-content-detail {
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 420px;
     background-size: 100% 70%;
     background-repeat: no-repeat;
     display: flex;
@@ -253,14 +451,78 @@
 .qualify-6 {
     background-image: url("../img/high-standards.jpg");
 }
-.quality-paragraph{
+
+.quality-paragraph {
     height: 25%;
     width: 80%;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1.3rem;
 }
-.more{
+
+.more {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.more .button a {
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+@media(min-width: 992px) and (max-width: 1199px){
+    .quality {
+        width: 90%;
+    }
+    .quality-content{
+      width: 95%;
+    }
+    .quality-content-detail{
+        width: 260px;
+        height: 380px;
+    }
+}
+@media (min-width: 767px) and (max-width: 991px){
+    .quality{
+        width: 90%;
+        height: auto;
+    }
+    .quality h5{
+        font-size: 14px;
+    }
+    .quality h4{
+        margin: 50px 0;
+    }
+    .quality-content{
+        margin: 50px auto;
+        width: 95%;
+        height: auto;
+    }
+    .quality-content-detail{
+        margin: 10px auto;
+    }
+}
+@media (max-width: 766px){
+    .quality{
+        width: 90%;
+        height: auto;
+    }
+    .quality h5{
+        display: none;
+    }
+    .quality h4{
+        margin: 30px 0;
+    }
+    .quality-content{
+        margin: 20px auto;
+        width: 95%;
+        height: auto;
+    }
+    .quality-content-detail{
+        margin: 20px auto;
+        width: 280px;
+        height: 380px;
+    }
 }

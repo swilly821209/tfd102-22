@@ -9,19 +9,19 @@ async function filterStore(text) {
     data.filter((li) => {
         if (text == '') {
             str += `<tr>
-            <td>${li.no}</td>
+            <td class="text-center">${li.no}</td>
             <td>${li.location}</td>
             <td>${li.address}</td>
-            <td>${li.businessHour}</td>
-            <td>${li.number}</td>
+            <td class="text-center">${li.businessHour}</td>
+            <td class="text-center">${li.number}</td>
         </tr>`
         } else if (li.location.toLowerCase().includes(text) || li.address.toLowerCase().includes(text)) {
             str += `<tr>
-            <td>${li.no}</td>
+            <td class="text-center">${li.no}</td>
             <td>${li.location}</td>
             <td>${li.address}</td>
-            <td>${li.businessHour}</td>
-            <td>${li.number}</td>
+            <td class="text-center">${li.businessHour}</td>
+            <td class="text-center">${li.number}</td>
         </tr>`
         }
     })

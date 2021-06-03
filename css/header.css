@@ -80,11 +80,10 @@ nav{
 .hamburg-menu{
   opacity: 0;
   transition: 1s all;
+  right: 2%;
   position: absolute;
-  right: 2%
-}
-.hamburg-menu {
-  border: 3px solid #e7272d;
+  z-index: 100000;
+  border: 3px solid white;
   width: 40px;
   height: 40px;
   padding: 5px;
@@ -97,8 +96,8 @@ nav{
 .menu-global {
   width: 80%;
   height: 3px;
-  background-color: #e7272d;
-  transition: all 1.5s;
+  background-color: white;
+  transition: all 1s;
 }
 
 .menu-middle-active {
@@ -109,6 +108,69 @@ nav{
 .menu-bottom{
   width: 60%;
 }
+.navigation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  visibility: hidden;
+}
+.navigation.active{
+  visibility: visible;
+}
+.navigation span{
+  position: absolute;
+  top: -100%;
+  left: calc(25% * var(--i));
+  width: 25%;
+  height: 100%;
+  background: #e7272d;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  transition: 0.25s;
+  transition-delay: calc(0.25s * var(--i));
+}
+.navigation.active span{
+  top: 0;
+}
+.navigation ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  transform: translateX(-100px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transition-delay: 0s
+}
+.navigation.active ul{
+  transform: translateX(0px);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.75s;
+}
+.navigation ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  color:white;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.navigation ul li a:hover{
+  background: white;
+  color: #e7272d;
+}
 @media  (max-width: 991px){
   .header-nav{
     width: 100%;
@@ -116,26 +178,11 @@ nav{
     margin: 20px 0;
   }
   .header-nav-lists{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 60px;
-    z-index: 1;
-    background-color: #222222;
-    width: 100%;
-    transition: all 0.5s;
-    clip-path: inset( 0 0 100% 0);
-  }
-  .hamburg-menu-open{
-    clip-path: inset(0 0 0 0);
-  }
-  .header-nav-lists li{
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid white;
+    display:none;
   }
   .hamburg-menu{
     opacity: 1;
    
   }
+  
 }

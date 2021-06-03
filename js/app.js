@@ -59,29 +59,58 @@ orderButton.addEventListener('mouseover', () => {
 
 let burgerImgs = document.querySelectorAll('.trait-burger-box img');
 let traitBurgerBox = document.querySelector('.trait-burger-box');
-let traitSection = document.querySelectorAll('.trait-burger-section');
-let traitBurgerTitle = document.querySelectorAll('.trait-burger-title')
+let traitSection = document.querySelectorAll('.trait-burger .trait-burger-section');
+let traitBurgerTitle = document.querySelectorAll('.trait-burger .trait-burger-title')
 let traitTitle = document.querySelector('.trait-title');
-
-
+console.log(burgerImgs)
+console.log(traitSection)
 document.addEventListener('scroll', () => {
   let top = traitTitle.offsetTop - 150
   if (scrollY > top) {
-    traitTitle.classList.add('trait-title-active')
-    traitBurgerBox.classList.add('trait-burger-box-active')
-    traitSection.forEach((li) => {
-      li.classList.add('trait-section-active')
-    })
-    setTimeout(() => {
-      for (let i = 0; i < 4; i++) {
-        burgerImgs[i].classList.add(`burger-${i + 1}`)
-      }
-      traitBurgerTitle.forEach((li) => {
-        li.classList.add('traitburger-title-active')
-      })
-    }, 1000)
+    traitBurgerBox.classList.add('burger-box-active')
   }
 })
+traitBurgerBox.addEventListener('transitionend', () => {
+  burgerImgs[0].classList.add('breadup');
+  burgerImgs[1].classList.add('meat');
+  burgerImgs[2].classList.add('veggie');
 
+})
+traitBurgerBox.addEventListener('transitionend', () => {
+  console.log('j')
+  traitSection[0].style.opacity = '1'
+
+})
+traitSection[0].addEventListener('transitionend', () => {
+  traitBurgerTitle[0].style.width = '9ch'
+  traitSection[1].style.opacity = '1'
+})
+traitSection[1].addEventListener('transitionend', () => {
+  traitBurgerTitle[1].style.width = '9ch'
+  traitSection[2].style.opacity = '1'
+})
+traitSection[2].addEventListener('transitionend', () => {
+  traitBurgerTitle[2].style.width = '9ch'
+})
+traitBurgerTitle[2].addEventListener('transitionend', () => {
+  traitTitle.classList.add('trait-title-active')
+})
+
+
+const sliderBtn = document.querySelectorAll('.slider-button div');
+const sliderBox = document.querySelector('.slider-box')
+
+sliderBtn.forEach((btn, i) => {
+  sliderBtn[0].style.background = 'white'
+  btn.addEventListener('click', () => {
+    let boxW = document.querySelector('.trait-burger-section')
+    let bwidth = boxW.getBoundingClientRect().width
+    sliderBtn.forEach((button) => {
+       button.style.background = "#222222"
+    })
+    sliderBox.style.transform = `translateX(-${i * bwidth}px)`
+    sliderBtn[i].style.background = 'white'
+  })
+})
 
 

@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
   <header>
     <div class="header-social-list">
       <a href="#"><img src="./img/youtube.svg" alt="fb" class="header-social-icon" /></a>
@@ -30,20 +31,33 @@
         </li>
         <li>
           <ul class="header-nav-lists">
-            <li><a href="meau.html">MENU</a></li>
+            <li><a href="menu.html">MENU</a></li>
             <li><a href="event.html">EVENT</a></li>
             <li><a href="find.html">FIND A ALWAY</a></li>
-            <li><a href="chose.html">NUTRITION CALCULATOR</a></li>
+            <li><a href="chose.html">NUTRITION</a></li>
             <li><a href="franchise.html">FRANCHISE</a></li>
             <li class="register"><img src="./img/register.svg" alt="register"></li>
           </ul>
+          <section class="navigation">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <ul>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="event.html">EVENT</a></li>
+              <li><a href="find.html">FIND A ALWAY</a></li>
+              <li><a href="chose.html">NUTRITION</a></li>
+              <li><a href="franchise.html">FRANCHISE</a></li>
+            </ul>
+          </section>
         </li>
       </ul>
       <div class="hamburg-menu">
         <span class="menu-global menu-top"></span>
         <span class="menu-global menu-middle"></span>
         <span class="menu-global menu-bottom"></span>
-    </div>
+      </div>
     </nav>
   </header>
   <div class="slider-container">
@@ -92,8 +106,8 @@
   <div class="delivery">
     <div class="delivery-content">
       <h4>
-        REALY <br />
-        FAAAAAAAST <br />
+        REALY <br class="none"/>
+        FAAAAAAAST <br class="none"/>
         DELIVERY!
       </h4>
       <p>
@@ -166,11 +180,34 @@
     </div>
   </section>
   <main>
-
+    <div class="trait-m">
+      <img src="./img/menu/turkey breast.png" alt="burger" class="trait-m-img">
+      <div class="trait-slider">
+        <div class="slider-box">
+          <div class="trait-burger-section">
+            <h4 class="trait-burger-title">BREAD</h4>
+            <p>Soft, hearty, and smells as good as it tastes.</p>
+          </div>
+          <div class="trait-burger-section">
+            <h4 class="trait-burger-title">MEAT</h4>
+            <p>GOOD Meat is real meat. Made without tearing down a forest or taking a life.</p>
+          </div>
+          <div class="trait-burger-section">
+            <h4 class="trait-burger-title">VEGGIES</h4>
+            <p>Add fresh-sliced veggies* for flavor, crunch…oh, and some nutritious stuff, too.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider-button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <div class="trait">
       <h4 class="trait-title">WHAT ARE YOU EATING?</h4>
       <div class="trait-burger">
-        <div>
+        <div class="trait-info">
           <div class="trait-burger-section">
             <h4 class="trait-burger-title">BREAD</h4>
             <p>Soft, hearty, and smells as good as it tastes.</p>
@@ -181,12 +218,12 @@
           </div>
         </div>
         <div class="trait-burger-box">
-          <div><img src="./img/breadup.png" alt="breadup"></div>
-          <div><img src="./img/meat.png" alt="meat"></div>
-          <div><img src="./img/veggie.png" alt="veggie"></div>
-          <div><img src="./img/breaddown.png" alt="breaddown"></div>
+          <img src="./img/breadup.png" alt="breadup">
+          <img src="./img/meat.png" alt="meat">
+          <img src="./img/veggie.png" alt="veggie">
+          <img src="./img/breaddown.png" alt="breaddown">
         </div>
-        <div>
+        <div class="trait-info">
           <div class="trait-burger-section">
             <h4 class="trait-burger-title">VEGGIES</h4>
             <p>Add fresh-sliced veggies* for flavor, crunch…oh, and some nutritious stuff, too.</p>
@@ -194,27 +231,41 @@
         </div>
       </div>
     </div>
-    <div class="foodmeau">
-      <div class="foodmeau-sandwiches">
-        <div class="foodmeau-content">
-          <h4>SAND-WICHES</h4>
-          <button class="button">VIEW MENU</button>
-        </div>
-        <div class="foodmeau-sandwiches-img"></div>
+    <div class="menu-section">
+      <div class="menu-section-title">
+        <h4 class="menu-title">Our Menu</h4>
+        <p class="menu-title-info">
+          Fresh veggies. Quality food. Smarter nutrition.
+        </p>
       </div>
-      <div class="foodmeau-burger">
-        <div class="foodmeau-content">
-          <h4>HOUSE BERGER</h4>
-          <button class="button">VIEW MENU</button>
+      <div class="menu-card-box">
+        <div class=menu-card>
+          <div class="menu-img-box">
+            <img src="./img/menucard1.jpg" alt="sandwich">
+          </div>
+          <div class="card-info">
+            <h4>SANDWICH</h4>
+            <button class="button"><a href="menu.html">view menu</a></button>
+          </div>
         </div>
-        <div class="foodmeau-burger-img"></div>
-      </div>
-      <div class="foodmeau-salads">
-        <div class="foodmeau-content">
-          <h4>FRESH SALADS</h4>
-          <button class="button">VIEW MENU</button>
+        <div class=menu-card>
+          <div class="menu-img-box">
+            <img src="./img/menucard2.jpg" alt="sandwich">
+          </div>
+          <div class="card-info">
+            <h4>SALAD</h4>
+            <button class="button"><a href="menu.html">view menu</a></button>
+          </div>
         </div>
-        <div class="foodmeau-salads-img"></div>
+        <div class=menu-card>
+          <div class="menu-img-box">
+            <img src="./img/menucard3.jpg" alt="sandwich">
+          </div>
+          <div class="card-info">
+            <h4>HAMBURGER</h4>
+            <button class="button"><a href="menu.html">view menu</a></button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -265,11 +316,11 @@
       </div>
     </div>
   </footer>
-  <pre class="warning">
+  <p class="warning">
     本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
     參考資源:subway。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理
     ※ [TibaMe-前端設計工程師養成班]請超連結https://www.facebook.com/webindex/
-  </pre>
+  </p>
 </body>
 
 
