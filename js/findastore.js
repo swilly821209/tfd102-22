@@ -9,19 +9,19 @@ async function filterStore(text) {
     data.filter((li) => {
         if (text == '') {
             str += `<tr>
-            <td class="text-center">${li.no}</td>
-            <td>${li.location}</td>
-            <td>${li.address}</td>
-            <td class="text-center">${li.businessHour}</td>
-            <td class="text-center">${li.number}</td>
+            <td class="text-center" data-title="NO"><span>${li.no}</span></td>
+            <td data-title="Location"><span>${li.location}</span></td>
+            <td data-title="Address"><span>${li.address}</span></td>
+            <td data-title="Business Hours" class="text-center"><span>${li.businessHour}</span></td>
+            <td data-title="Contact Number" class="text-center"><span>${li.number}</span></td>
         </tr>`
         } else if (li.location.toLowerCase().includes(text) || li.address.toLowerCase().includes(text)) {
             str += `<tr>
-            <td class="text-center">${li.no}</td>
-            <td>${li.location}</td>
-            <td>${li.address}</td>
-            <td class="text-center">${li.businessHour}</td>
-            <td class="text-center">${li.number}</td>
+            <td data-title="NO" class="text-center"><span>${li.no}</span></td>
+            <td data-title="Location" ><span>${li.location}</span></td>
+            <td data-title="Address" ><span>${li.address}</span></td>
+            <td data-title="Business Hours" class="text-center"><span>${li.businessHour}</span></td>
+            <td data-title="Contact Number" class="text-center"><span>${li.number}</span></td>
         </tr>`
         }
     })

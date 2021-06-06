@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/franchise.css">
     <link rel="stylesheet" href="css/footer.css">
     <script type="module" src="js/iconscale.js" defer></script>
+    <script type="module" src="js/hamburger-menu.js" defer></script>
+    <script src="js/login.js" defer></script>
 </head>
 
 <body>
@@ -23,6 +25,43 @@
             <a href="#"><img src="./img/ig.svg" alt="ig" class="header-social-icon" /></a>
         </div>
         <nav>
+            <div class="login-dialog">
+                <div class="close-dialog"><img src="./img/close.svg" alt="close"></div>
+                <div class="container">
+                    <div class="boxs">
+                        <div class="box signin">
+                            <h2>Already Have an Account ?</h2>
+                            <button class="button">Sign in</button>
+                        </div>
+                        <div class="box signup">
+                            <h2>Don't Have an Account ?</h2>
+                            <button class="button">Sign up</button>
+                        </div>
+                    </div>
+                    <div class="formBox">
+                        <div class="form signinForm">
+                            <form>
+                                <h3>Sign in</h3>
+                                <input type="text" placeholder="Username">
+                                <input type="text" placeholder="Password">
+                                <input type="submit" value="Login">
+                                <a href="#" class="forgot">Forgot Password</a>
+                            </form>
+                        </div>
+
+                        <div class="form signupForm">
+                            <form>
+                                <h3>Sign Up</h3>
+                                <input type="text" placeholder="Username">
+                                <input type="text" placeholder="Email Address">
+                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder="Confirm Password">
+                                <input type="submit" value="Register">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ul class="header-nav">
                 <li>
                     <h1 class="header-logo"><a href="index.html"></a></h1>
@@ -47,6 +86,7 @@
                             <li><a href="find.html">FIND A ALWAY</a></li>
                             <li><a href="chose.html">NUTRITION</a></li>
                             <li><a href="franchise.html">FRANCHISE</a></li>
+                            <li class="register"><img src="./img/register.svg" alt="register"></li>
                         </ul>
                     </section>
                 </li>
@@ -77,7 +117,7 @@
             <div class="franchise-step-detail">
                 <h4 class="title-size">Becoming a franchise owner</h4>
                 <h5>From application to opening day</h5>
-                <img class="franchise-img-m" src="../TED102-022/img/next-step-m.svg" alt="next-step-m">
+                <img class="franchise-img-m" src="./img/next-step-m.svg" alt="next-step-m">
                 <div class="franchise-step-containerup">
                     <div class="franchise-content">
                         <h6>Meet</h6>

@@ -1,3 +1,10 @@
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .product {
     display: flex;
     justify-content: space-between;
@@ -5,64 +12,160 @@
     align-items: center;
     height: 600px;
     color: white;
-    margin: 100px;
+    margin: 100px 0;
 }
+
 .product h1 {
     font-size: 50px;
     color: white
 }
-.product p {
+
+.product img {
+    width: 80%;
+}
+
+.product>p {
     width: 600px;
     text-align: center;
 }
-section{
+
+.product-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 350px;
     flex-direction: column;
 }
-section h2{
+
+.product-menu h2 {
     font-size: 30px;
     color: white;
 }
-section ul{
+
+.product-menu ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 900px
 }
-section li a{
+
+.product-menu li a {
     display: inline-block;
-  width: 250px;
-  height: 250px;
-  background-size: 250px 250px;
+    width: 250px;
+    height: 250px;
+    background-size: 100% 100%;
+    background-position: center;
 }
-.recommend{
+
+.recommend {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 400px;
     height: 100px;
-    margin: 20px;
+    margin: 10px;
 }
+
 .recommend img {
     width: 70px;
     height: 50px;
     display: block;
 }
-.tuna{
-    background-image: url('../img/tuna_sandwiches.jpg');
-}
-.turkey-breast{
-    background-image: url('../img/turkeybreast_sandwiches.jpg');
-}
-.chicken-teriyaki{
-    background-image: url('../img/sweetonionchickenteriyaki.jpg');
-}
-.recommend-sauces{
+
+.recommend-sauces {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     width: 150px;
+}
+
+@media(max-width: 992px) {
+    main {
+        margin: 75px 0;
+    }
+    .product h1 {
+        font-size: 35px;
+    }
+    .product img {
+        width: 65%;
+    }
+    .product>p {
+        width: 70%;
+    }
+    .recommend img {
+        width: 50px;
+        height: 40px;
+    }
+    .recommend-sauces p {
+        font-size: 12px;
+    }
+    .product-menu ul {
+        width: 740px;
+    }
+    .product-menu li a {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
+    .product-menu {
+        height: 300px;
+    }
+}
+
+@media(max-width: 767px) {
+    .product h1 {
+        font-size: 35px;
+    }
+    .product-menu ul {
+        width: 90%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .product-menu li {
+        margin: 25px;
+    }
+    .product-menu li a {
+        width: 300px;
+        height: 300px;
+    }
+    .product-menu {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        margin: 25px 0;
+    }
+    .product {
+        height: 450px;
+    }
+    .product h1 {
+        font-size: 28px;
+    }
+    .recommend {
+        width: 340px;
+        margin: 0px;
+    }
+    .recommend-sauces {
+        height: 70px;
+        width: 100px;
+    }
+    
+    .product-menu h2 {
+        font-size: 26px;
+    }
+}
+
+.tuna {
+    background-image: url('../img/tuna_sandwiches.jpg');
+}
+
+.turkey-breast {
+    background-image: url('../img/turkeybreast_sandwiches.jpg');
+}
+
+.chicken-teriyaki {
+    background-image: url('../img/sweetonionchickenteriyaki.jpg');
 }

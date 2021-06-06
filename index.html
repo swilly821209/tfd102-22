@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/homePage.css" />
   <link rel="stylesheet" href="css/footer.css">
   <script type="module" src="./js/app.js" defer></script>
+  <script src="js/login.js" defer></script>
 </head>
 
 <body>
@@ -25,39 +26,77 @@
       <a href="#"><img src="./img/ig.svg" alt="ig" class="header-social-icon" /></a>
     </div>
     <nav>
-      <ul class="header-nav">
+      <div class="login-dialog">
+        <div class="close-dialog"><img src="./img/close.svg" alt="close"></div>
+        <div class="container">
+            <div class="boxs">
+                <div class="box signin">
+                    <h2>Already Have an Account ?</h2>
+                    <button class="button">Sign in</button>
+                </div>
+                <div class="box signup">
+                    <h2>Don't Have an Account ?</h2>
+                    <button class="button">Sign up</button>
+                </div>
+            </div>
+            <div class="formBox">
+                <div class="form signinForm">
+                    <form>
+                        <h3>Sign in</h3>
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Password">
+                        <input type="submit" value="Login">
+                        <a href="#" class="forgot">Forgot Password</a>
+                    </form>
+                </div>
+
+                <div class="form signupForm">
+                    <form>
+                        <h3>Sign Up</h3>
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Email Address">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="header-nav">
         <li>
-          <h1 class="header-logo"><a href="index.html"></a></h1>
+            <h1 class="header-logo"><a href="index.html"></a></h1>
         </li>
         <li>
-          <ul class="header-nav-lists">
-            <li><a href="menu.html">MENU</a></li>
-            <li><a href="event.html">EVENT</a></li>
-            <li><a href="find.html">FIND A ALWAY</a></li>
-            <li><a href="chose.html">NUTRITION</a></li>
-            <li><a href="franchise.html">FRANCHISE</a></li>
-            <li class="register"><img src="./img/register.svg" alt="register"></li>
-          </ul>
-          <section class="navigation">
-            <span style="--i:0;"></span>
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-            <ul>
-              <li><a href="menu.html">MENU</a></li>
-              <li><a href="event.html">EVENT</a></li>
-              <li><a href="find.html">FIND A ALWAY</a></li>
-              <li><a href="chose.html">NUTRITION</a></li>
-              <li><a href="franchise.html">FRANCHISE</a></li>
+            <ul class="header-nav-lists">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="event.html">EVENT</a></li>
+                <li><a href="find.html">FIND A ALWAY</a></li>
+                <li><a href="chose.html">NUTRITION</a></li>
+                <li><a href="franchise.html">FRANCHISE</a></li>
+                <li class="register"><img src="./img/register.svg" alt="register"></li>
             </ul>
-          </section>
+            <section class="navigation">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <ul>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="event.html">EVENT</a></li>
+                    <li><a href="find.html">FIND A ALWAY</a></li>
+                    <li><a href="chose.html">NUTRITION</a></li>
+                    <li><a href="franchise.html">FRANCHISE</a></li>
+                    <li class="register"><img src="./img/register.svg" alt="register"></li>
+                </ul>
+            </section>
         </li>
-      </ul>
-      <div class="hamburg-menu">
+    </ul>
+    <div class="hamburg-menu">
         <span class="menu-global menu-top"></span>
         <span class="menu-global menu-middle"></span>
         <span class="menu-global menu-bottom"></span>
-      </div>
+    </div>
     </nav>
   </header>
   <div class="slider-container">
