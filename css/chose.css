@@ -56,7 +56,7 @@ main {
 }
 
 .chose-content {
-  width: 900px;
+  width: 75%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -191,7 +191,44 @@ input:checked+div .sauces-img {
 .card:hover .sauces-img {
   width: 60%;
 }
+@media(max-width: 992px){
+  .chose-content {
+    width: 90%;
+}
+main{
+  padding: 50px;
+}
 
+}
+@media (max-width: 767px){
+  .chose-result{
+    width: 570px;
+  }
+}
+@media(max-width:576px){
+  .chose-page-title {
+    font-size: 26px;
+  }
+  main{
+    padding: 30px 10px;
+  }
+  .chose-pages {
+    margin: 20px 10px 50px;
+    width: 320px;
+  }
+  .chose-result {
+    width: 320px;
+    height: 300px;
+  }
+  .chose-result ul {
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  
+  
+}
 @keyframes circle {
   from {
     stroke-dashoffset: 100;

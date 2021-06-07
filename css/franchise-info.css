@@ -2,63 +2,97 @@
     width: 100%;
     height: 650px;
     background-image: url("../img/more-info.jpg");
-    background-size: 1800px;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: white;
+
 }
-.banner div {
-    width: 800px;
+.banner-info{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25%;
 }
-.banner h1 {
-    font-size: 50px;
+.banner-info h1 {
+    font-size: 40px;
     font-weight: 900;
 }
-.banner p {
-    margin: 20px;
+.banner-info p{
+    width: 50%;
+    line-height: 20px;
+}
+@media(max-width:767px){
+    .banner{
+        height: 450px;
+    }
+    .banner-info h1{
+        font-size: 30px;
+    }
+    .banner-info p{
+        width: 65%;
+    }
+}
+@media (max-width: 576px) {
+    .banner-info h1{
+        font-size: 22px;
+    }
+    .banner-info p{
+        width: 75%;
+    }
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 select:focus{
     border: 1px dashed black;
 }
-form{
-  margin: 0 auto;
-  width: 800px;
-  line-height: 3rem;
-}
-.form-content{
-    background-color: white;
-    width:700px;
-    padding: 100px;
-    margin: 80px auto;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.form-content h2 {
-    font-size: 50px;
-    margin-bottom: 50px;
-}
-.form-contact{
-    width: 560px;
-    height: 40px;
-    border-bottom: 1px dashed black;
-}
-.form-container {
-    display: flex;
-    width: 620px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.form-content h2{
+    font-weight: 900;
+    font-size: 40px;
+    color:#e7272d;
+    margin: 50px 0;
 }
 .form-container-input{
-    display:flex;
-    width: 300px;
+    display: flex;
     flex-direction: column;
+    width: 200px;
+    margin: 20px 0;
 }
-.button{
-    margin-top: 20px;
+.form-container-input label{
+    color:#e7272d;
+    margin-bottom: 10px;
 }
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    justify-content: space-between;
+}
+.button a{
+  color: white;
+  text-decoration: none;
+}
+@media(max-width: 576px){
+    .form-container{
+        width: 330px;
+    }
+    .form-container-input{
+        width: 140px;
+        margin: 10px 0;
+    }
+    .form-content h2{
+        font-size: 30px;
+    }
+    .first-title{
+        width: 200px;
+    }
+
+}
+

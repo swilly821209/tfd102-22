@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/franchise-info.css">
     <link rel="stylesheet" href="css/footer.css">
     <script type="module" src="js/iconscale.js" defer></script>
+    <script type="module" src="js/hamburger-menu.js" defer></script>
     <script src="js/login.js" defer></script>
 </head>
 
@@ -98,13 +99,12 @@
         </nav>
     </header>
     <div class="banner">
-        <div>
+        <div class="banner-info">
             <h1>MAKE LIFE WHAT YOU WANT</h1>
-            <p>Do you want to lead your own team? Serve nutritious food? <br>
-                Provide excellent customer service? Learn newskills? <br>
-                If you’re ready for the challenge <br>
+            <p>Do you want to lead your own team? Serve nutritious food? 
+                Provide excellent customer service? Learn newskills? 
+                If you’re ready for the challenge 
                 start here</p>
-            <button class="button">Request More Info</button>
         </div>
     </div>
     <main>
@@ -112,13 +112,12 @@
             <h2>Register Your Interest</h2>
             <form action="post">
                 <div class="form-container-input">
-                    <label for="way">Why are you contacting us?</label>
+                    <label  class="first-title" for="way">Why are you contacting us?</label>
                     <select name="way" id="way">
                         <option value="volvo">I have a great location for someone to use</option>
                         <option value="saab">I want to buy or build a store</option>
                     </select>
                 </div>
-                <div class="form-contact">Contact</div>
                 <div class="form-container">
                     <div class="form-container-input">
                         <label for="first-name">First Name*</label>
