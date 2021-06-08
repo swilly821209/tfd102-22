@@ -98,6 +98,7 @@ nav {
   color: #e7272d
 }
 .formBox{
+  border-radius: 10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -153,9 +154,10 @@ nav {
   font-size: 1.5em;
   color: #333;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 900;
 }
 .form form input{
+  border-radius: 10px;
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
